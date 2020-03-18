@@ -39,64 +39,106 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX
 ## APIs
 
 1. Create 
+
     Path: http://localhost:8080/api/people
+
     Method: POST
+
     Headers: 
     - Authorization: <as described above>
     - Content-type: application/json
+
     Body: the following JSON body:
+
     {
+
         firstName: <String, the first name of the person, required>
+
         lastName: <String, the last name of the person, required>
+
         middleName: <String, the middle name of the person, optional>
+
         phone: <String, the phone number of the person, required, the string must conform to the following regex: /^[0-9+\-]+$/>
+
         company: <String, the company of the person belongs to, optional>
+
         dob:  <String, the datew of birth of the person, required, the string must match the following format: "yyyy-mm-dd">
+
         addressLine1: <String, first line of the person's address, optional>
+
         addressLine2: <String, second line of the person's address, optional>
+
         city: <String, the city where the person is located, required>
+
         postalCode: <String, the postal code where the person is located, optional>
+
         country: <String, country where the person is located, required>
+
     }
 
     Response: the JSON above with the "id" field added which is the database id of the entity.
 
 2. Read
+
     Path: http://localhost:8080/api/people
+
     Method: POST
+
     Headers: 
     - Authorization: <as described above>
     Response: A JSON array containing the People entity with id as described in the Create API above.
 
 3. Update 
+
     Path: http://localhost:8080/api/people
+
     Method: PUT
+
     Headers: 
     - Authorization: <as described above>
     - Content-type: application/json
+
     Body: the following JSON body:
+
     {
+
         id: <integer, the database id of the entity, required>
+
         firstName: <String, the first name of the person, required>
+
         lastName: <String, the last name of the person, required>
+
         middleName: <String, the middle name of the person, optional>
+
         phone: <String, the phone number of the person, required, the string must conform to the following regex: /^[0-9+\-]+$/>
+
         company: <String, the company of the person belongs to, optional>
+
         dob:  <String, the datew of birth of the person, required, the string must match the following format: "yyyy-mm-dd">
+
         addressLine1: <String, first line of the person's address, optional>
+
         addressLine2: <String, second line of the person's address, optional>
+
         city: <String, the city where the person is located, required>
+
         postalCode: <String, the postal code where the person is located, optional>
+
         country: <String, country where the person is located, required>
+
     }
 
     Response: the JSON field in the Body section above with the updated values.
 
 4. Delete
+
     Path: http://localhost:8080/api/people/{id}
+
     Method: DELETE
+
     Headers: 
     - Authorization: <as described above>
+    
     Path Parameters: 
     - id: the id of the entity to be deleted. e.g. http://localhost:8080/api/people/7 to delete the entity with id = 7
 
