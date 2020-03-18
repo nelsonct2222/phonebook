@@ -82,7 +82,7 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX
 
     Path: http://localhost:8080/api/people
 
-    Method: POST
+    Method: GET
 
     Headers: 
     - Authorization: <as described above>
@@ -138,7 +138,7 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX
 
     Headers: 
     - Authorization: <as described above>
-    
+
     Path Parameters: 
     - id: the id of the entity to be deleted. e.g. http://localhost:8080/api/people/7 to delete the entity with id = 7
 
