@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.aicheung.phonebook"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "phonebook",
+    "packageName": "com.aicheung.phonebook",
+    "packageFolder": "com/aicheung/phonebook",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWIxYjc1NTU5OTdiMzVlNTA0MGVjOWFmOGM1ODcwYzdkNDYwYzQyZjBhMWM4MDU1ZTY2MzE3NWQ1NGZiNGJkYzJiMzYxMDNlZGZhZTRlY2Y3MWZhNjNlNzNiYWZiZTEzYTc2MzVjOTBmYTJiMGFlNjMxZDk5NDcwMWRhZWNiNDI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1584510622654,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

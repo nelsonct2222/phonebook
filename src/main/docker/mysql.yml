@@ -1,0 +1,13 @@
+version: '2'
+services:
+  phonebook-mysql:
+    image: mysql:8.0.19
+    # volumes:
+    #     - ~/volumes/jhipster/phonebook/mysql/:/var/lib/mysql/
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=phonebook
+    ports:
+      - 3306:3306
+    command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
