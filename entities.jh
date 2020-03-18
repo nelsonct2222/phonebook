@@ -1,0 +1,13 @@
+entity Person {
+	firstName String required minlength(1) maxlength(200),
+	lastName String required minlength(1) maxlength(200),
+	middleName String maxlength(200),
+    phone String required minlength(1) maxlength(20) pattern(/^[0-9+\-]+$/),
+    company String,
+    dob LocalDate required,
+	addressLine1 String maxlength(200),
+    addressLine2 String maxlength(200),
+    city String required,
+    postalCode String,
+    country String required
+} 
